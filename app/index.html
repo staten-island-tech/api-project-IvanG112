@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Project</title>
+  </head>
+  <body>
+    <div id="filters">
+      <div class="Weakness-filter">
+        <label for="Weaknesses">Filter by Weaknesses</label>
+        <select id="Weaknesses" name="Weaknesses">
+          <option value="">All Weaknesses</option>
+          <option value="fire">Fire</option>
+          <option value="water">Water</option>
+          <option value="ice">Ice</option>
+          <option value="thunder">Thunder</option>
+          <option value="poison">Poison</option>
+          <option value="dragon">Dragon</option>
+          <option value="sleep">Sleep</option>
+          <option value="paralysis">Paralysis</option>
+          <option value="blast">Blast</option>
+          <option value="stun">Stun</option>
+        </select>
+      </div>
+      <div class="Type-filter">
+        <label for="Types">Filter by Types</label>
+        <select id="Types" name="Types">
+          <option value="">All Types</option>
+          <option value="herbivore">Herbivore</option>
+          <option value="fanged wyvern">Fanged Wyvern</option>
+          <option value="bird wyvern">Bird Wyvern</option>
+          <option value="brute wyvern">Brute Wyvern</option>
+          <option value="elder dragon">Elder Dragon</option>
+          <option value="flying wyvern">Flying Wyvern</option>
+          <option value="neopteron">Neopteron</option>
+          <option value="piscine wyvern">Piscine Wyvern</option>
+          <option value="relict">Relict</option>
+          <option value="wingdrake">Wingdrake</option>
+        </select>
+      </div> 
+      <div>
+        <label for="Locations">Filter by Locations</label>
+        <select id="Locations" name="Locations">
+          <option value="">All Locations</option>
+          <option value="Ancient Forest">Ancient Forest</option>
+          <option value="Coral Highlands">Coral Highlands</option>
+          <option value="Wildspire Waste">Wildspire Waste</option>
+          <option value="Elder's Recess">Elder's Recess</option>
+          <option value="Rotten Vale">Rotten Vale</option>
+          <option value="Great Ravine">Great Ravine</option>
+          <option value="Everstream">Everstream</option>
+          <option value="Confluence of Fates">Confluence of Fates</option>
+          <option value="Caverns of El Dorado">Caverns of El Dorado</option>
+          <option value="Hoarfrost Reach">Hoarfrost Reach</option>
+          <option value="Guiding Lands">Guiding Lands</option>
+          <option value="Secluded Valley">Secluded Valley</option>
+        </select>
+      </div>
+      <div id="search-bar">
+        <input class="search-bar-input"
+          type="text"
+          id="search-input"
+          placeholder="Search for monsters..."
+        />
+      </div>
+    </div>
+    <div id="data-list">
+      <div id="monsters"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
